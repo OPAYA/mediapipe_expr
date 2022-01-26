@@ -7,9 +7,9 @@ licenses(["notice"])
 
 package(default_visibility = ["//visibility:public"])
 
-#exports_files([
-#	"emotion_detection.tflite"
-#])
+exports_files([
+	"emotion_detection.tflite"
+])
 
 mediapipe_simple_subgraph(
     name = "face_emotion_cpu",
